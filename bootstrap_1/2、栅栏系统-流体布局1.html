@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--以最高级别的可用模式显示内容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--移动端的视口与我们的页面是同一个尺寸-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <!--首先，引入css-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style type="text/css">
+        .container-fluid{
+            border:1px solid lime;
+        }
+        .container{
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!--栅栏系统，bootstrap默认系统分为12栏，自动适应-->
+    <!--容器，流体布局，自使用屏幕-->
+    <div class="container-fluid">
+        aaaaa
+    </div>
+    <!--容器：固定布局，但是这个固定不是真正的固定，根据屏幕分辨率不同，大小是不同的-->
+    <div class="container">
+        bbbb
+    </div>
+
+    <!--bootstrap是基于jquery的，所以要先引入jquery-->
+    <script type="text/javascript" href="jquery-1.11.0.js"></script>
+    <script type="text/javascript" href="bootstrap.js"></script>
+
+</body>
+</html>

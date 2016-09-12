@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--以最高级别的可用模式显示内容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--移动端的视口与我们的页面是同一个尺寸-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <!--首先，引入css-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style type="text/css">
+        div[class*="col-"]{
+            background: rebeccapurple;
+            border:1px solid red;
+            color:white;
+            min-height:40px;
+        }
+    </style>
+</head>
+<body>
+    <!--栅栏系统，bootstrap默认系统分为12栏，自动适应-->
+    <!--容器，流体布局，自使用屏幕-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6col-lg-6
+            </div>
+            <div class="col-lg-3">col-lg-3</div>
+            <div class="col-lg-3">col-lg-3</div>
+            <!--专门用来清除浮动-->
+            <div class="clearfix"></div>
+            <div class="col-lg-3">col-lg-3</div>
+        </div>
+    </div>
+
+
+    <!--bootstrap是基于jquery的，所以要先引入jquery-->
+    <script type="text/javascript" href="jquery-1.11.0.js"></script>
+    <script type="text/javascript" href="bootstrap.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--以最高级别的可用模式显示内容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--移动端的视口与我们的页面是同一个尺寸-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <!--首先，引入css-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style type="text/css">
+        div[class*="col-"]{
+            background: rebeccapurple;
+            border:1px solid red;
+            color:white;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <!--栅栏系统，bootstrap默认系统分为12栏，自动适应-->
+    <!--分为行和列   row和col-->
+    <!--容器：固定布局，但是这个固定不是真正的固定，根据屏幕分辨率不同，大小是不同的-->
+    <div class="container">
+        <!--lg >1200        md>992         sm>768        xs<768   -->
+        <div class="row">
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+            <div class="col-md-4">col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">col-xs-4</div>
+            <div class="col-xs-4">col-xs-4</div>
+            <div class="col-xs-4">col-xs-4</div>
+        </div>
+        <!--可以定义多个class-->
+        <div class="row">
+            <div class="col-xs-2 col-md-3 col-lg-4">col-xs-4</div>
+            <div class="col-xs-4 col-md-4 col-lg-4">col-xs-4</div>
+            <div class="col-xs-6 col-md-5 col-lg-4">col-xs-4</div>
+        </div>
+    </div>
+
+    <!--bootstrap是基于jquery的，所以要先引入jquery-->
+    <script type="text/javascript" href="jquery-1.11.0.js"></script>
+    <script type="text/javascript" href="bootstrap.js"></script>
+
+
+
+</body>
+</html>

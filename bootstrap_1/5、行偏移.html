@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--以最高级别的可用模式显示内容-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--移动端的视口与我们的页面是同一个尺寸-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <!--首先，引入css-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style type="text/css">
+        div[class*="col-"]{
+            background: rebeccapurple;
+            border:1px solid red;
+            color:white;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <!--栅栏系统，bootstrap默认系统分为12栏，自动适应-->
+    <!--容器，流体布局，自使用屏幕-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+            <div class="col-lg-4">col-lg-4</div>
+        </div>
+        <div class="row">
+                                <!--向右偏移4个网格，最小1，最大12，超出则没有效果-->
+            <div class="col-lg-4 col-lg-offset-4 col-md-offset-4">col-lg-4 col-lg-offset-4</div>
+        </div>
+        <div class="row">
+                            <!-- 排序，往后移10个 -->
+            <div class="col-lg-2 col-lg-push-10">col-lg-2</div>
+                            <!-- 排序，往前移2个 -->
+            <div class="col-lg-10 col-lg-pull-2">col-lg-10</div>
+        </div>
+
+        <!--排序和偏移的差别-->
+        <div class="row">
+            <div class="col-lg-4">col-lg-4</div>
+                                <!--偏移会导致换行-->
+            <div class="col-lg-4 col-lg-offset-5">col-lg-4 col-lg-offset-5</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">col-lg-4</div>
+                                <!--排序不会-->
+            <div class="col-lg-4 col-lg-push-5">col-lg-4 col-lg-push-5</div>
+        </div>
+    </div>
+
+
+    <!--bootstrap是基于jquery的，所以要先引入jquery-->
+    <script type="text/javascript" href="jquery-1.11.0.js"></script>
+    <script type="text/javascript" href="bootstrap.js"></script>
+
+</body>
+</html>
